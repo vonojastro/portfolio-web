@@ -20,11 +20,19 @@ const Header = () => {
                     </Link>
 
                     {/* NavLink large */}
-                    <ul className='space-x-8 hidden md:flex'>
-                        <li>Projects</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Resume</li>
+                    <ul className='space-x-3 hidden md:flex'>
+                        <li
+                        className='navLink'
+                        >Projects</li>
+                        <li
+                        className='navLink'
+                        >About</li>
+                        <li
+                        className='navLink'
+                        >Contact</li>
+                        <li
+                        className='navLink'
+                        >Resume</li>
                     </ul>
 
                     <AiOutlineMenu
