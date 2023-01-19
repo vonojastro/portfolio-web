@@ -1,6 +1,7 @@
 import React from 'react'
 import { Montserrat, Poppins } from "@next/font/google";
-import Header from './Header/Header';
+import Header from './Header';
+import Footer from './Footer';
 
 const poppins = Montserrat({
     subsets: ["latin"],
@@ -14,11 +15,15 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div className={`w-full ${poppins.className}`}>
-            <>
-                <Header />
-            </>
+        <div className={`w-full min-h-screen flex flex-col justify-between ${poppins.className}`}>
+<>
+            <Header />
+</>
+
             {children}
+<>
+            <Footer />
+</>
 
         </div>
     )
