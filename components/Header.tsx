@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { CgClose } from 'react-icons/cg';
-import Sidebar from './Sidebar/Sidebar';
+
 
 
 
@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <>
 
-            <div className='fixed top-0 bg-white w-full z-50 drop-shadow '>
+            <div className=' bg-white w-full z-50 drop-shadow-[0_3px_2px_rgba(0,0,0,0.1)] '>
                 <div className='h-[70px] mx-4 flex items-center justify-between relative lg:mx-10'>
 
                     <Link href='/home'>
@@ -39,7 +39,28 @@ const Header = () => {
             </div>
 
             {/* NavLink Mobile */}
-            <Sidebar navOpen={navOpen} />
+            <ul className={`absolute h-full  z-0 w-full flex flex-col justify-center items-center top-[0] ${navOpen ? 'opacity-100' : 'opacity-0'} duration-300 ease-out py-10 bg-white md:hidden`}>
+                <li className='sidebarLink'>
+                    <Link href='/'>
+                        Projects
+                    </Link>
+                </li>
+                <li className='sidebarLink'>
+                    <Link href='/'>
+                        About
+                    </Link>
+                </li>
+                <li className='sidebarLink'>
+                    <Link href='/'>
+                        Contact
+                    </Link>
+                </li>
+                <li className='sidebarLink'>
+                    <Link href='/'>
+                        Resume
+                    </Link>
+                </li>
+            </ul>
 
         </>
     )
