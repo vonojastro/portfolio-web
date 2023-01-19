@@ -15,7 +15,6 @@
         scrollbar-width: normal;
         scrollbar-color: #777 #555;
         scroll-behavior: smooth !important;
-
       }
     
       html::-webkit-scrollbar {
