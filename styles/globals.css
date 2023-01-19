@@ -29,6 +29,10 @@
       html::-webkit-scrollbar-track {
         background-color: #ffff;
       }
+
+      a {
+        outline: none;
+      }
     
 }
 
