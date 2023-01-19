@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <div className='h-full mx-auto w-full items-center grid content-center md:grid-cols-2 lg:max-w-6xl'>
 
-            <div className='flex justify-center px-4 items-center w-full text-center h-[400px]  md:px-8'>
+            <div className='flex justify-center px-4 items-center w-full text-center h-[600px]  md:px-8'>
                 <div className='flex flex-col space-y-5 items-start text-start'>
                     <h1 className='font-bold uppercase'>Von Carlo R. Ojastro</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae vel quas ipsum ducimus perspiciatis, id deleniti mollitia consequatur non.</p>
