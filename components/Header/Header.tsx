@@ -46,12 +46,12 @@ const Header = () => {
 
      
 
-            <ul className={`absolute min-h-screen opacity-100 z-[-5] w-full flex border gray flex-col justify-center items-center top-[0] ${navOpen ? 'right-[0px]' : 'right-[-1000px]'} duration-300 ease-in-out space-y-12 py-10 bg-white md:w-5/12 lg:hidden`}>
+            {/* <ul className={`absolute min-h-screen opacity-100 z-[-5] w-full flex border gray flex-col justify-center items-center top-[0] ${navOpen ? 'right-[0px]' : 'right-[-1000px]'} duration-300 ease-in-out space-y-12 py-10 bg-white md:w-5/12 lg:hidden`}>
                 <li>Projects</li>
                 <li>About</li>
                 <li>Contact</li>
                 <li>Resume</li>
-            </ul>
+            </ul> */}
 
 
         </>
