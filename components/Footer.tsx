@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <section className='drop-shadow-[0_2px_5px_rgba(0,0,0,0.1)] bg-white py-5'>
+        <section className='drop-shadow-[0px_0px_3px_rgba(0,0,0,0.1)] bg-white py-5'>
 
             <div className=' flex justify-center mx-4'>
 
