@@ -12,8 +12,8 @@ const Header = () => {
     return (
         <>
 
-            <div className=' bg-white w-full z-50 drop-shadow-[0_3px_2px_rgba(0,0,0,0.1)] '>
-                <div className='h-[70px] mx-4 flex items-center justify-between relative lg:mx-10'>
+            <div className=' bg-white w-full z-50 drop-shadow-[0_3px_2px_rgba(0,0,0,0.1)] px-4'>
+                <div className='h-[70px] mx-auto flex items-center justify-between relative lg:max-w-6xl'>
 
                     <Link href='/home'>
                         <p>Von Ojastro</p>
@@ -40,22 +40,30 @@ const Header = () => {
 
             {/* NavLink Mobile */}
             <ul className={`absolute h-full  z-0 w-full flex flex-col justify-center items-center top-[0] ${navOpen ? 'opacity-100' : 'opacity-0'} duration-300 ease-out py-10 bg-white md:hidden`}>
-                <li className='sidebarLink'>
+                <li className='sidebarLink'
+                    onClick={() => setNavOpen(false)}
+                >
                     <Link href='/'>
                         Projects
                     </Link>
                 </li>
-                <li className='sidebarLink'>
+                <li className='sidebarLink'
+                    onClick={() => setNavOpen(false)}
+                >
                     <Link href='/'>
                         About
                     </Link>
                 </li>
-                <li className='sidebarLink'>
+                <li className='sidebarLink'
+                    onClick={() => setNavOpen(false)}
+                >
                     <Link href='/'>
                         Contact
                     </Link>
                 </li>
-                <li className='sidebarLink'>
+                <li className='sidebarLink'
+                    onClick={() => setNavOpen(false)}
+                >
                     <Link href='/'>
                         Resume
                     </Link>
