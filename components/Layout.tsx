@@ -1,8 +1,8 @@
 import React from 'react'
-import { Poppins } from "@next/font/google";
+import { Montserrat, Poppins } from "@next/font/google";
 import Header from './Header/Header';
 
-const poppins = Poppins({
+const poppins = Montserrat({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700", "900"],
 });
