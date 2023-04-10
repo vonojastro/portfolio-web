@@ -1,0 +1,85 @@
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react'
+
+
+interface Info {
+  first: string;
+  second: string;
+  third: string;
+  fourth: string;
+
+}
+
+interface Props {
+  work: Info[];
+  education: Info[];
+}
+
+
+const Qualification: React.FC<Props> = ({ education, work }) => {
+  const [isEducation, setIsEducation] = useState<boolean>(false)
+
+
+
+  return (
+    <div className='py-10 bg-[#171C23] min-h-screen w-full'>
+      <div className='lg:max-w-6xl mx-auto'>
+        <div className='flex flex-col gap-2 items-center pb-10'>
+          <h1 className='text-2xl text-[#02c272]'>Qualifications</h1>
+          <p className='text-white'>My Personal Journey</p>
+        </div>
+
+        <div className='flex gap-5 justify-center'>
+          <h1 onClick={() => setIsEducation(true)} className={`text-md cursor-pointer ${isEducation ? 'text-[#02c272]' : 'text-white'}`}>Education</h1>
+          <h1 onClick={() => setIsEducation(false)} className={`text-md cursor-pointer ${!isEducation ? 'text-[#02c272]' : 'text-white'}`}>Work</h1>
+        </div>
+
+        <div className='flex px-10 justify-start lg:justify-center gap-5'>
+          {/* time line */}
+
+          <div className={`h-[450px] w-[2px] bg-[#02c272] flex flex-col justify-between my-[100px]`}>
+
+            {isEducation && education.map((info: Info, index) => (
+              <div key={index}>
+                {index % 2 === 0 &&
+                  <>
+                    {/* dot */}
+                    <div className='w-4 h-4 rounded-lg bg-[#02c272] translate-x-[-7px] relative'>
+                      <div className='absolute flex gap-5 justify-end items-center lg:left-[-450px] right-[-320px] md:right-[-450px]  text-white text-start w-[300px] lg:text-end top-[-30px] md:w-[400px]'>
+                        <div>
+                          <h1>{info.first}</h1>
+                          <p>{info.second}</p>
+                          <p>{info.third}</p>
+                        </div>
+                        <Image src='' alt='' className='bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                      </div>
+                    </div>
+                  </>
+                }
+                {index % 2 !== 0 &&
+                  <>
+                    {/* dot */}
+                    <div className='w-4 h-4 rounded-lg bg-[#02c272] translate-x-[-7px] relative'>
+                      <div className='absolute flex gap-5 items-center justify-start right-[-320px] md:right-[-450px] text-white text-start top-[-30px] w-[300px] md:w-[400px]'>
+                        <Image src='' alt='' className='bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                        <div>
+                          <h1>{info.first}</h1>
+                          <p>{info.second}</p>
+                          <p>{info.third}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                }
+              </div>
+            ))}
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Qualification

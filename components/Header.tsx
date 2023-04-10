@@ -1,37 +1,36 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { CgClose } from 'react-icons/cg';
-
-
-
+import { loadFull } from 'tsparticles';
+import particlesConfig from '../particlesConfig/particles-config';
+import MyParticles from '../utils/ParticlesBG';
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false)
 
     return (
         <>
-
-            <div className=' bg-white w-full z-50 drop-shadow-[0_3px_2px_rgba(0,0,0,0.1)] px-4'>
+            <div className='w-full z-50 px-4'>
                 <div className='h-[70px] mx-auto flex items-center justify-between relative lg:max-w-6xl'>
 
                     <Link href='/home'>
-                        <p>Von Ojastro</p>
+                        <p className='text-white'>Von Ojastro</p>
                     </Link>
 
                     {/* NavLink large */}
                     <ul className='space-x-3 hidden md:flex'>
                         <li
-                        className='navLink'
+                            className='navLink'
                         >Projects</li>
                         <li
-                        className='navLink'
+                            className='navLink'
                         >About</li>
                         <li
-                        className='navLink'
+                            className='navLink'
                         >Contact</li>
                         <li
-                        className='navLink'
+                            className='navLink'
                         >Resume</li>
                     </ul>
 
