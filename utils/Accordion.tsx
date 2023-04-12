@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Accordion = () => {
+type Props = {
+  children: ReactNode;
+}
+
+const Accordion = ({ children }: Props) => {
   return (
-    <div className='bg-[#fff] text-white w-full flex justify-center h-4'>
-      Hello
+    <div className='bg-[#fff] text-white w-full flex justify-center items-center gap-3 cursor-pointer h-4 rounded-md '>
+      {children}
     </div>
   )
 }

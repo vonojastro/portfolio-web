@@ -10,66 +10,81 @@
   padding: 0;
 }
 
-@layer base{
-    html {
-        scrollbar-width: normal;
-        scrollbar-color: #777 #555;
-        scroll-behavior: smooth !important;
-      }
-    
-      html::-webkit-scrollbar {
-        width: 0.5vw;
-        height: 10px;
-      }
+@layer base {
+  html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    scroll-behavior: smooth !important;
+  }
 
-      html::-webkit-scrollbar-thumb {
-        background-color: rgb(197, 197, 197);
-        border-radius: 5px;
-      }
-      html::-webkit-scrollbar-track {
-        background-color: #ffff;
-      }
+  html::-webkit-scrollbar {
+    width: 0.5vw;
+    height: 10px;
+  }
 
-      a {
-        outline: none;
-      }
-    
+  html::-webkit-scrollbar-thumb {
+    background-color: rgb(197, 197, 197);
+    border-radius: 5px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: #ffff;
+  }
+
+  a {
+    outline: none;
+  }
+
+
+
+  @media screen and (max-width: 767px) {
+    h1, h2,h3,h4,h5, p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 567px) {
+    h1, h2,h3,h4,h5, p {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 @layer components {
-    .sidebarLink {
-        @apply bg-white duration-300 ease-in-out cursor-pointer w-full text-center py-8 hover:bg-gray-100;
-      }
+  .sidebarLink {
+    @apply bg-white duration-300 ease-in-out cursor-pointer w-full text-center py-8 hover:bg-gray-100;
+  }
 
-    .navLink {
-        position: relative;
-        text-decoration: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        border-radius: 1px;
-        color: #fff;
-        font-size: 0.9rem;
-    }  
-    .navLink:after {
-        content: "";
-        position: absolute;
-        background-color: #02c272;
-        height: 2px;
-        border-radius: 1px;
-        width: 0;
-        left: 0;
-        bottom: -5px;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-        transition: 0.3s all ease-in-out;
+  .navLink {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 1px;
+    color: #fff;
+    font-size: 0.9rem;
+  }
 
-    }  
+  .navLink:after {
+    content: "";
+    position: absolute;
+    background-color: #02c272;
+    height: 2px;
+    border-radius: 1px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s all ease-in-out;
 
-    .navLink:hover {
-        color: #02c272;
-        transition: 0.2s all ease-in-out; 
-    }
+  }
 
-    .navLink:hover:after {
-width: 100%;
-    }
+  .navLink:hover {
+    color: #02c272;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .navLink:hover:after {
+    width: 100%;
+  }
 }

@@ -14,7 +14,7 @@ const Header = () => {
             <div className='w-full z-50 px-4'>
                 <div className='h-[70px] mx-auto flex items-center justify-between relative lg:max-w-6xl'>
 
-                    <Link href='/home'>
+                    <Link href='/'>
                         <p className='text-white'>Von Ojastro</p>
                     </Link>
 
@@ -35,12 +35,12 @@ const Header = () => {
                     </ul>
 
                     <AiOutlineMenu
-                        className={`cursor-pointer relative text-2xl ${navOpen ? 'rotate-0 opacity-0' : 'rotate-180'} duration-300 ease-in-out md:hidden`}
+                        className={`text-white cursor-pointer relative text-2xl ${navOpen ? 'rotate-0 opacity-0' : 'rotate-180'} duration-300 ease-in-out md:hidden`}
                         onClick={() => setNavOpen(!navOpen)} />
 
 
                     <CgClose
-                        className={`cursor-pointer absolute right-0 text-2xl  ${!navOpen ? 'rotate-180 opacity-0' : 'rotate-0'} duration-300 ease-in-out md:hidden`}
+                        className={`cursor-pointer absolute right-0 text-2xl  ${!navOpen ? 'rotate-180 opacity-0' : 'rotate-0 text-black'} duration-300 ease-in-out md:hidden`}
                         onClick={() => setNavOpen(!navOpen)} />
                 </div>
             </div>

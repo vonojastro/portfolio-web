@@ -9,7 +9,9 @@ import ProjectSection from '../components/Projects'
 import particlesConfig from '../particlesConfig/particles-config'
 import SkillSection from '../components/Skills'
 import Qualification from '../components/Qualification'
-import { education, work } from '../constants/qualification'
+import { education, work, frontendSkills, backendSkills, designSkills } from '../constants/qualification'
+import Testimonials from '../components/Testimonials'
+import Contact from '../components/Contact'
 
 
 const Home: NextPage = () => {
@@ -25,9 +27,12 @@ const Home: NextPage = () => {
 
       <Layout >
         <Hero />
-        {/* <SkillSection /> */}
+        <SkillSection  frontendSkills={frontendSkills} backendSkills={backendSkills} designSkills={designSkills}/>
         <Qualification education={education} work={work}/>
         {/* <ProjectSection /> */}
+        <Testimonials />
+        <Contact />
+        <Testimonials />
       </Layout>
 
     </div>
