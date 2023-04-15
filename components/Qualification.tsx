@@ -15,7 +15,7 @@ interface Props {
   education: Info[];
 }
 
-const Qualification: React.FC<Props> = ({ education, work }) => {
+const Qualification = ({ education, work } : Props) => {
   const [isEducation, setIsEducation] = useState<boolean>(false)
 
   return (

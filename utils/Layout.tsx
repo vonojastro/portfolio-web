@@ -16,13 +16,13 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
     return (
         <div className={`w-full min-h-screen flex flex-col justify-between ${poppins.className}`}>
-<>
-            <Header />
-</>
+            <>
+                <Header />
+            </>
             {children}
-<>
-            <Footer />
-</>
+            <>
+                <Footer />
+            </>
 
         </div>
     )

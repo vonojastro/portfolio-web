@@ -8,5 +8,18 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    'tailwindcss',
+    'postcss-flexbugs-fixes',
+    'postcss-preset-env',
+    require('tailwindcss')({
+      // ...
+      experimental: {
+        applyComplexClasses: true,
+        defaultLineHeights: true,
+        extendedFontSizeScale: true,
+      },
+    }),
+  ],
+  
 }

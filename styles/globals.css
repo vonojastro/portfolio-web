@@ -50,11 +50,35 @@
   }
 }
 
+@layer utils {
+  .carousel-item {
+    @apply absolute h-full w-full cursor-pointer overflow-hidden drop-shadow-md transition-all duration-500 ;
+  }
+
+}
+
 @layer components {
   .sidebarLink {
     @apply bg-white duration-300 ease-in-out cursor-pointer w-full text-center py-8 hover:bg-gray-100;
   }
 
+  .carousel-container {
+    @apply relative h-[300px] w-6/12 md:w-5/12  sm:h-40 md:h-[300px];
+    perspective: 450px;
+    transform-style: preserve-3d;
+  }
+
+  .carousel-btn-switch {
+    @apply absolute z-40 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-2 border-[#302e30] bg-[#181818] text-2xl opacity-75 transition duration-300 hover:opacity-100 md:h-12 md:w-12;
+  }
+
+.carousel-arrow-left {
+  @apply absolute lg:left-[-300px] md:left-[-220px] left-[-100px]  top-[40%] ;
+}
+
+.carousel-arrow-right {
+  @apply lg:right-[-300px]  md:right-[-220px] right-[-100px] top-[40%] ;
+}
   .navLink {
     position: relative;
     text-decoration: none;

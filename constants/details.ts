@@ -120,6 +120,36 @@ export const frontendSkills = [
     image: '/images/skills/joomla.webp',
     description: ''
   },
+  {
+    software: 'Git',
+    image: '/images/skills/git.webp',
+    description: ''
+  },
+  {
+    software: 'Github',
+    image: '/images/skills/github.webp',
+    description: ''
+  },
+  {
+    software: 'Gitlab',
+    image: '/images/skills/gitlab.webp',
+    description: ''
+  },
+  {
+    software: 'Source Tree',
+    image: '/images/skills/sourcetree.webp',
+    description: ''
+  },
+  {
+    software: 'Github Desktop',
+    image: '/images/skills/githubDesktop.webp',
+    description: ''
+  },
+  {
+    software: 'Azure Dev ops',
+    image: '/images/skills/azureDevops.webp',
+    description: ''
+  }
 ]
 
 // backend

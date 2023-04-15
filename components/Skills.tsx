@@ -19,13 +19,11 @@ interface Props {
 }
 
 
-const SkillSection: React.FC<Props> = ({ frontendSkills, backendSkills, designSkills }) => {
+const SkillSection = ({ frontendSkills, backendSkills, designSkills } : Props) => {
   const [show, setShow] = useState(1)
 
-
-
   return (
-    <div className='py-10 md:py-[100px] w-full bg-[#171C23] min-h-[650px]'>
+    <div className='py-10 md:py-[50px] w-full bg-[#171C23] min-h-[650px]'>
       <div className='text-center pb-10'>
         <h1 className='text-2xl text-[#02c272]'>Skills</h1>
         <p className='text-white'>My technical skills</p>
@@ -58,19 +56,19 @@ const SkillSection: React.FC<Props> = ({ frontendSkills, backendSkills, designSk
           </div>
         </div>
 
-        <div className='flex flex-wrap gap-5 justify-center items-center bg-[#202730] rounded-b-lg p-12'>
+        <div className='flex flex-wrap gap-6 md:gap-10 justify-center items-center bg-[#202730] rounded-b-lg p-10 md:p-12'>
           {show === 1 ? frontendSkills.map((item, index) => (
-            <>
-              <Image src={item.image} alt='' key={index} width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[50px] h-[50px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
-            </>
+            <div key={index}>
+              <Image src={item.image} alt='' width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[40px] h-[40px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
+            </div>
           )) : show === 2 ? backendSkills.map((item, index) => (
-            <>
-              <Image src={item.image} alt='' key={index} width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[50px] h-[50px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
-            </>
+            <div key={index}>
+              <Image src={item.image} alt='' width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[40px] h-[40px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
+            </div>
           )) : designSkills.map((item, index) => (
-            <>
-              <Image src={item.image} alt='' key={index} width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[50px] h-[50px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
-            </>
+            <div key={index}>
+              <Image src={item.image} alt='' width={100} height={100} className='border-[1px] cursor-pointer border-white  bg-white w-[40px] h-[40px] md:w-[70px] md:h-[70px] rounded-full object-cover truncate' />
+            </div>
           ))}
         </div>
       </div>
