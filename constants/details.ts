@@ -70,11 +70,11 @@ export const frontendSkills = [
     image: '/images/skills/typescript.webp',
     description: ''
   },
-  {
-    software: 'HTML',
-    image: '/images/skills/HTML.webp',
-    description: ''
-  },
+  // {
+  //   software: 'HTML',
+  //   image: '/images/skills/HTML.webp',
+  //   description: ''
+  // },
   {
     software: 'CSS',
     image: '/images/skills/css.webp',
