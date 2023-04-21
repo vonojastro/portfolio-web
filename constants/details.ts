@@ -283,3 +283,11 @@ export const designSkills = [
     description: ''
   },
 ]
+
+export const testimonilas = [
+  {
+    fullName: '',
+    jobTitle: '',
+    comments: ''
+  }
+]

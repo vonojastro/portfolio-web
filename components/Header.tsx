@@ -4,7 +4,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { CgClose } from 'react-icons/cg';
 import { loadFull } from 'tsparticles';
 import particlesConfig from '../particlesConfig/particles-config';
-import MyParticles from '../utils/ParticlesBG';
+import MyParticles from './utils/ParticlesBackground';
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false)
@@ -46,7 +46,8 @@ const Header = () => {
             </div>
 
             {/* NavLink Mobile */}
-            <ul className={`absolute h-full  z-10 bg-white w-full flex flex-col justify-center items-center top-[0] ${navOpen ? 'opacity-100' : 'opacity-0'} duration-300 ease-out py-10 bg-white md:hidden`}>
+            <ul className={`absolute h-full  z-10  w-full flex flex-col justify-center items-center top-[0] ${navOpen ? 'opacity-100' : 'opacity-0'} duration-300 ease-out py-10 bg-white md:hidden`}>
+      
                 <li className='sidebarLink'
                     onClick={() => setNavOpen(false)}
                 >

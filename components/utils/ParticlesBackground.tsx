@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { loadFull } from 'tsparticles'
-import particlesConfig from '../particlesConfig/particles-config'
+import particlesConfig from '../../particlesConfig/particles-config'
 import RecursivePartial from "react-tsparticles";
 import Particles from "react-tsparticles";
 import IOptions from "react-tsparticles"

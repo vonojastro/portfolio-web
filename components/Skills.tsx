@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Accordion from '../utils/Accordion'
+import Accordion from './utils/Accordion'
 import { HiOutlineCode } from 'react-icons/hi';
 import { MdKeyboardArrowDown } from "@react-icons/all-files/md/MdKeyboardArrowDown";
 import { HiOutlineColorSwatch} from "@react-icons/all-files/hi/HiOutlineColorSwatch";
@@ -34,7 +34,7 @@ const SkillSection = ({ frontendSkills, backendSkills, designSkills } : Props) =
           <div onClick={() => setShow(1)} className={`${show === 1 ? 'bg-[#202730]' : ''} hover:bg-[#1e242b] px-3 py-5 rounded-t-lg w-5/12 duration-100 all ease-in-out`}>
             <Accordion>
               <HiOutlineCode className='text-[#02c272] hidden md:block' />
-              <h1>Frontend</h1>
+              <h1 className='text-white'>Frontend</h1>
               {/* <MdKeyboardArrowDown className='text-[#02c272]' /> */}
             </Accordion>
           </div>
@@ -42,7 +42,7 @@ const SkillSection = ({ frontendSkills, backendSkills, designSkills } : Props) =
           <div onClick={() => setShow(2)} className={`${show === 2 ? 'bg-[#202730]' : ''} hover:bg-[#1e242b] px-3 py-5 rounded-t-lg w-5/12 duration-100 all ease-in-out`}>
             <Accordion>
               <AiOutlineDatabase className='text-[#02c272] hidden md:block' />
-              <h1>Backend</h1>
+              <h1 className='text-white'>Backend</h1>
               {/* <MdKeyboardArrowDown className='text-[#02c272]' /> */}
             </Accordion>
           </div>
@@ -50,7 +50,7 @@ const SkillSection = ({ frontendSkills, backendSkills, designSkills } : Props) =
           <div onClick={() => setShow(3)} className={`${show === 3 ? 'bg-[#202730]' : ''} hover:bg-[#1e242b] px-3 py-5 rounded-t-lg w-5/12 duration-100 all ease-in-out`}>
             <Accordion>
               <HiOutlineColorSwatch className='text-[#02c272] hidden md:block' />
-              <h1>Design</h1>
+              <h1 className='text-white'>Design</h1>
               {/* <MdKeyboardArrowDown className='text-[#02c272]' /> */}
             </Accordion>
           </div>

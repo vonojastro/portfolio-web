@@ -9,12 +9,9 @@ const Footer = () => {
                 <div>
                     Von Ojastro
                 </div>
-
-               
-
             </div>
 
-            <h1 className='text-center py-5'>© All Rights Reserved .Built and designed by Von Ojastro</h1>
+            <h1 className='text-center py-5'>© All Rights Reserved. Built and designed by Von Ojastro</h1>
         </section>
     )
 }

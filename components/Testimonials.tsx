@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Carouseltem from '../utils/Carouseltem'
+import Carouseltem from './utils/Carouseltem'
 import { IoIosArrowBack } from "@react-icons/all-files/io/IoIosArrowBack";
+import { IoIosArrowForward } from "@react-icons/all-files/io/IoIosArrowForward";
 
 
 interface Props {
@@ -21,11 +22,11 @@ const Testimonials = ({ width, height, items }: Props) => {
   const handlePrev = () => { setActiveIndex((prev) => prev - 1 >= 0 ? prev - 1 : prev) }
 
   return (
-    <div className='w-full py-[100px] flex flex-col items-center bg-[#171C23] justify-center'>
+    <div className='w-full py-[100px] flex flex-col items-center bg-[#171C23] justify-center h-[1000px]'>
 
       <div className='text-center pb-10'>
-        <h1 className='text-2xl text-[#02c272]'>Skills</h1>
-        <p className='text-white'>My technical skills</p>
+        <h1 className='text-2xl text-[#02c272]'>Section title</h1>
+        <p className='text-white'>Description</p>
       </div>
       <div className='carousel-container text-center'>
         {activeIndex > 0 && (
@@ -44,7 +45,7 @@ const Testimonials = ({ width, height, items }: Props) => {
 
         {activeIndex < items.length - 1 && (
           <button onClick={handleNext}>
-            <IoIosArrowBack style={{ transform: 'rotate(180deg)' }} className='carousel-btn-switch carousel-arrow-right
+            <IoIosArrowForward  className='carousel-btn-switch carousel-arrow-right
        ' />
           </button>
         )}

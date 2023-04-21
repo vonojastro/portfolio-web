@@ -6,7 +6,7 @@ type Props = {
 
 const Accordion = ({ children }: Props) => {
   return (
-    <div className='bg-[#fff] text-white w-full flex justify-center items-center gap-3 cursor-pointer h-4 rounded-md '>
+    <div className='  w-full flex justify-center items-center gap-3 cursor-pointer h-4 rounded-md '>
       {children}
     </div>
   )

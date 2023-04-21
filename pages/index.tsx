@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Layout from '../utils/Layout'
-import MyParticles from '../utils/ParticlesBG'
+import Layout from '../components/utils/Layout'
+import MyParticles from '../components/utils/ParticlesBackground'
 import ProjectSection from '../components/Projects'
 import particlesConfig from '../particlesConfig/particles-config'
 import SkillSection from '../components/Skills'
@@ -12,6 +12,9 @@ import Qualification from '../components/Qualification'
 import { education, work, frontendSkills, backendSkills, designSkills } from '../constants/details'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
+
+import toast, { Toaster } from 'react-hot-toast';
+
 
 import card1 from '/public/images/skills/node.webp'
 import card2 from '/public/images/skills/canva.webp'
@@ -38,6 +41,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout >
+        <Toaster />
         <Hero />
         <SkillSection frontendSkills={frontendSkills} backendSkills={backendSkills} designSkills={designSkills} />
         <Qualification education={education} work={work} />
