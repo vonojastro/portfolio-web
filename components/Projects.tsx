@@ -38,9 +38,9 @@ const ProjectSection = () => {
                     <SwiperSlide>
                         <div className='lg:max-w-6xl  mx-auto '>
                             <div className='pt-5 flex flex-col gap-2'>
-                                <h1 className='text-2xl text-white font-semibold pt-5'>Tales Blog Application</h1>
+                                <h1 className='text-2xl text-white font-light py-5'>Tales Blog Application</h1>
                                 {/* <p className='text-2xl text-[#02c272] font-light pb-5'>Tales Blog Application</p> */}
-                                <div className='border-l-[15px] border-r-[15px] border-t-[15px] drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)]  border-black rounded-t-3xl  h-[200px] bg-white'>
+                                <div className='border-l-[14px] border-r-[14px] border-t-[15px] drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)]  border-black rounded-t-3xl  h-[200px] bg-white'>
 
                                 </div>
                             </div>
