@@ -45,8 +45,8 @@ const Home: NextPage = () => {
         <Hero />
         <SkillSection frontendSkills={frontendSkills} backendSkills={backendSkills} designSkills={designSkills} />
         <Qualification education={education} work={work} />
-        {/* <ProjectSection /> */}
-        <Testimonials items={imageItems} />
+        <ProjectSection />
+        {/* <Testimonials items={imageItems} /> */}
         <Contact />
 
       </Layout>

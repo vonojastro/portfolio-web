@@ -89,10 +89,10 @@ const Contact = () => {
 
             <form className='px-5 lg:px-0 flex flex-col gap-4 md:gap-5 items-start w-full' onSubmit={onSubmit}>
               <div className='flex flex-col md:flex-row gap-4 w-full'>
-                <input required type='text' placeholder='Name' className='w-full px-2 py-2 md:py-2 rounded-sm outline-none' value={contactInput.name} onChange={(e) => setContactInput({ ...contactInput, name: e.target.value })} />
-                <input required type='email' placeholder='Email' className='w-full px-2 py-2 md:py-2 rounded-sm outline-none' value={contactInput.email} onChange={(e) => setContactInput({ ...contactInput, email: e.target.value })} />
+                <input required type='text' placeholder='Name' className='w-full px-3 py-2 md:py-2 rounded-sm outline-none' value={contactInput.name} onChange={(e) => setContactInput({ ...contactInput, name: e.target.value })} />
+                <input required type='email' placeholder='Email' className='w-full px-3 py-2 md:py-2 rounded-sm outline-none' value={contactInput.email} onChange={(e) => setContactInput({ ...contactInput, email: e.target.value })} />
               </div>
-              <textarea required className='w-full px-2 py-2 md:py-2 rounded-sm h-full min-h-[150px] outline-none' value={contactInput.message} onChange={(e) => setContactInput({ ...contactInput, message: e.target.value })} />
+              <textarea required className='w-full px-3 py-2 md:py-2 rounded-sm h-full min-h-[150px] outline-none' value={contactInput.message} onChange={(e) => setContactInput({ ...contactInput, message: e.target.value })} />
               <button type='submit' className='flex items-center gap-3 border-[#02c272] bg-[#02c272] text-white hover:bg-[#02a360] px-6 py-3 duration-300 ease-in-out rounded-md'>Send Message
               
               {submitLoading ? (
@@ -109,7 +109,6 @@ const Contact = () => {
                 <BiSend className='text-xl'/>
               )}
             
-
               </button>
             </form>
 

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useCallback, useState } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from 'react-icons/ai';
 import { CgClose } from 'react-icons/cg';
 import { loadFull } from 'tsparticles';
 import particlesConfig from '../particlesConfig/particles-config';
@@ -19,7 +19,7 @@ const Header = () => {
                     </Link>
 
                     {/* NavLink large */}
-                    <ul className='space-x-3 hidden md:flex'>
+                    <ul className='space-x-3 hidden md:flex items-center'>
                         <li
                             className='navLink'
                         >Projects</li>
@@ -32,6 +32,18 @@ const Header = () => {
                         <li
                             className='navLink'
                         >Resume</li>
+                        <div className='px-5 flex items-center gap-4'>
+                            <Link href='https://www.linkedin.com/in/von-ojastro-5535831b2/' target="_blank" rel="noopener noreferrer"
+
+                            >
+                                <AiFillLinkedin className='text-2xl text-white duration-200 ease-in-out hover:text-[#00C271] ' />
+                            </Link>
+                            <Link href='https://github.com/vonojastro?tab=repositories' target="_blank" rel="noopener noreferrer"
+
+                            >
+                                <AiFillGithub className='text-2xl text-white duration-200 ease-in-out hover:text-[#00C271] ' />
+                            </Link>
+                        </div>
                     </ul>
 
                     <AiOutlineMenu
@@ -47,7 +59,7 @@ const Header = () => {
 
             {/* NavLink Mobile */}
             <ul className={`absolute h-full  z-10  w-full flex flex-col justify-center items-center top-[0] ${navOpen ? 'opacity-100' : 'opacity-0'} duration-300 ease-out py-10 bg-white md:hidden`}>
-      
+
                 <li className='sidebarLink'
                     onClick={() => setNavOpen(false)}
                 >
@@ -74,6 +86,13 @@ const Header = () => {
                 >
                     <Link href='/'>
                         Resume
+                    </Link>
+                </li>
+                <li className='sidebarLink'
+                    onClick={() => setNavOpen(false)}
+                >
+                    <Link href='https://www.linkedin.com/in/von-ojastro-5535831b2/'>
+                        <AiFillLinkedin />
                     </Link>
                 </li>
             </ul>
