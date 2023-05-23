@@ -58,12 +58,12 @@ export const frontendSkills = [
   {
     software: 'React JS',
     image: '/images/skills/react.webp',
-    description: ''
+    description: 'I use React.js to build dynamic and interactive user interfaces for web applications. One of the main reasons I choose React.js is its component-based architecture. I can break down the user interface into smaller, self-contained components, which makes it easier to manage and reuse code. Another advantage of React.js is its strong ecosystem and the availability of numerous third-party libraries and tools. These resources provide additional functionalities, such as routing, state management, and form validation, which can enhance the development process and productivity.'
   },
   {
     software: 'Next JS',
     image: '/images/skills/next.webp',
-    description: ''
+    description: 'Next.js is a powerful tool that I use for building modern, server-rendered React applications. One of the key benefits of Next.js is its built-in support for server-side rendering (SSR). This means that when a user requests a page, the server generates the HTML content dynamically and sends it to the client. SSR improves the initial load time and enhances search engine optimization (SEO) by providing fully rendered content to search engine crawlers.'
   },
   {
     software: 'Typescript',
