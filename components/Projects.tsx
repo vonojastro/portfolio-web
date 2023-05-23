@@ -20,7 +20,7 @@ import ButtonSecondary from './utils/ButtonSecondary';
 const ProjectSection = () => {
     return (
 
-        <div className='w-full bg-[#2C323A] py-5'>
+        <div className='w-full bg-[#171C23]  py-5'>
             <div className=' mx-auto w-full items-center flex flex-col content-center md:flex-row  '>
 
 

@@ -39,14 +39,14 @@ export const work = [
   },
   {
     first: 'Crescendo Collective',
-    second: 'QA Analyst / Magnolia CMS Developer',
+    second: 'QA Analyst / Magnolia CMS Developer - Full time',
     third: '2021-2022',
     fourth: '',
     fifth: '/images/crescendo.webp'
   },
   {
     first: 'Tagpros Education',
-    second: 'Software Developer',
+    second: 'Software Engineer 1 - Part Time',
     third: '2022-Present',
     fourth: '',
     fifth: '/images/tagpros.webp'
