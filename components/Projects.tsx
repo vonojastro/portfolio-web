@@ -46,7 +46,7 @@ const ProjectSection = () => {
                         <SwiperSlide key={index}>
                             <div className='lg:max-w-6xl pb-5 mx-auto bg-[#171C23]'>
                                 <div className='p-5 flex flex-col gap-2'>
-                                    <h1 className='text-2xl text-white font-light py-5 text-center lg:text-start'>{item.title}</h1>
+                                    <h1 className='text-2xl text-white font-light pt-5 md:pb-4 text-center lg:text-start'>{item.title}</h1>
                                     {/* <p className='text-2xl text-[#02c272] font-light pb-5'>Tales Blog Application</p> */}
                                     <div className='hidden relative md:flex border-l-[14px] border-r-[14px] cursor-pointer overflow-hidden border-t-[15px] drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)]  border-black rounded-t-3xl  h-[300px] bg-white'>
                                         <img src={item.desktopImg} alt='tales_img' className={`absolute top-0 ${item.enableScroll && 'hover:top-[-600%]'} duration-[8s] ease-in-out`} />

@@ -30,18 +30,18 @@ const Hero = () => {
                         <div className='flex gap-3'>
                             <ButtonPrimary>{
                                 <Link href="#contact">
-                                    <span className='flex gap-2 items-center'>
+                                    <span className='flex gap-2   items-center'>
                                         Contact Me
-                                        <BiSend className='text-lg' />
+                                        <BiSend className='hidden md:flex text-lg' />
                                     </span>
                                 </Link>
 
                             }</ButtonPrimary>
                             <ButtonSecondary>{
                                 <a href='/images/files/Von_Ojastro.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
-                                    <span className='flex gap-2 items-center'>
+                                    <span className='flex gap-2  items-center'>
                                         Resume
-                                        <HiDownload className='text-lg' />
+                                        <HiDownload className=' hidden md:flex text-lg' />
                                     </span>
                                 </a>
                             }</ButtonSecondary>
