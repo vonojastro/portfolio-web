@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='py-10 md:py-[100px] w-full h-[750px] md:h-full'>
+    <div className='py-10 md:py-[100px] w-full h-[750px] md:h-full' id="contact">
       <div className='lg:max-w-6xl mx-auto'>
         <div className='flex flex-col gap-2 items-center pb-10'>
           <h1 className='text-2xl text-[#02c272]'>Contact Me</h1>

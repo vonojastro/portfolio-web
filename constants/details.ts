@@ -356,7 +356,7 @@ export const projects = [
     title: 'Tagpros Education LMS',
     desktopImg: '/images/tagpros-page.png',
     mobileImg: '/images/tagpros-page-mobile.png',
-    description: "Through Tagpros, teachers can create profiles and showcase their expertise, qualifications, and teaching experiences. They can apply for job positions posted by educational institutions. As an added feature that I implemented, the job application process within Tagpros is streamlined, making it convenient for teachers to submit their applications and credentials directly through the platform.",
+    description: "Through Tagpros, teachers can create profiles and showcase their expertise, qualifications, and teaching experiences. As an added feature that I implemented, the job application process within Tagpros is streamlined, making it convenient for teachers to submit their applications and credentials directly through the platform.",
     githubLink: '',
     liveLink: 'https://tagpros-staging.vercel.app/jobs',
     stack: [

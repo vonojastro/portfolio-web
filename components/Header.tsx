@@ -20,20 +20,27 @@ const Header = () => {
 
                     {/* NavLink large */}
                     <ul className='space-x-3 hidden md:flex items-center'>
-                        <li
-                            className='navLink'
-                        >Projects</li>
-                        <li
-                            className='navLink'
-                        >About</li>
-                        <li
-                            className='navLink'
-                        >Contact</li>
-                        <a href='/images/files/Von_Ojastro_Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                        <Link href="#projects">
+                            <li
+                                className='navLink'
+                            >Projects</li>
+                        </Link>
+                        <Link href="#qualifications">
+                            <li
+                                className='navLink'
+                            >Qualifications</li>
+                        </Link>
+                        <Link href="#contact">
+                            <li
+                                className='navLink'
+                            >Contact</li>
+                        </Link>
+
+                        <Link href='/images/files/Von_Ojastro_Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
                             <li
                                 className='navLink'
                             >Resume</li>
-                        </a>
+                        </Link>
                         <div className='px-5 flex items-center gap-4'>
                             <Link href='https://www.linkedin.com/in/von-ojastro-5535831b2/' target="_blank" rel="noopener noreferrer"
 

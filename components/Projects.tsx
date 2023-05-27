@@ -23,13 +23,12 @@ const ProjectSection = () => {
     const [software, setSoftware] = useState('')
     return (
 
-        <div className='w-full bg-[#171C23]   py-5'>
+        <div className='w-full bg-[#171C23] py-5' id="projects">
             <div className='text-center py-10'>
                 <h1 className='text-2xl text-[#02c272]'>Projects</h1>
                 <p className='text-white'>My Works</p>
             </div>
             <div className='px-5 mx-auto w-full items-center flex flex-col content-center md:flex-row  '>
-
                 {/* carousel */}
                 <Swiper
                     slidesPerView={1}
@@ -45,7 +44,7 @@ const ProjectSection = () => {
                 >
                     {projects.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className='lg:max-w-6xl  mx-auto bg-[#171C23]'>
+                            <div className='lg:max-w-6xl pb-5 mx-auto bg-[#171C23]'>
                                 <div className='p-5 flex flex-col gap-2'>
                                     <h1 className='text-2xl text-white font-light py-5 text-center lg:text-start'>{item.title}</h1>
                                     {/* <p className='text-2xl text-[#02c272] font-light pb-5'>Tales Blog Application</p> */}
@@ -54,7 +53,7 @@ const ProjectSection = () => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col-reverse lg:flex-row h-full py-5 '>
-                                    <div className='p-5 w-12/12 lg:w-6/12 flex flex-col items-center justify-center '>
+                                    <div className='px-5 w-12/12 lg:w-6/12 flex flex-col items-center justify-center '>
                                         <div className='text-center max-w-[550px] lg:max-w-full lg:text-start w-full text-white'>
                                             <p>{item.description}</p>
                                         </div>
@@ -68,16 +67,7 @@ const ProjectSection = () => {
                                         <div className='w-full text-center lg:text-start pt-4'>
                                             <p className=' text-white'>{software}</p>
                                         </div>
-                                        <div className='flex gap-4 py-3 justify-center lg:justify-start w-full'>
-                                            <Link href={item.liveLink} target="_blank" rel="noopener noreferrer">
-                                                <ButtonPrimary >Live
-                                                    <AiOutlineGlobal className='text-xl' />
-                                                </ButtonPrimary>
-                                            </Link>
-                                            <ButtonSecondary >Github
-                                                <AiOutlineGithub className='text-2xl' />
-                                            </ButtonSecondary>
-                                        </div>
+
                                     </div>
                                     <div className='w-12/12 lg:w-6/12 flex flex-col md:flex-row gap-6  items-center justify-center  px-5'>
                                         <div className='w-[320px] relative border-4 px-5 bg-white overflow-hidden cursor-pointer rounded-lg border-black drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)] h-[200px]'>
@@ -87,6 +77,16 @@ const ProjectSection = () => {
                                             <img src={item.mobileImg} alt='tales_img' className='absolute top-0 hover:top-[-200%] left-0 duration-[4s] ease-in-out' />
                                         </div>
                                     </div>
+                                </div>
+                                <div className='flex gap-4 my-5 justify-center  w-full'>
+                                    <Link href={item.liveLink} target="_blank" rel="noopener noreferrer">
+                                        <ButtonPrimary >Live
+                                            <AiOutlineGlobal className='text-xl' />
+                                        </ButtonPrimary>
+                                    </Link>
+                                    <ButtonSecondary >Github
+                                        <AiOutlineGithub className='text-2xl' />
+                                    </ButtonSecondary>
                                 </div>
                             </div>
                         </SwiperSlide>

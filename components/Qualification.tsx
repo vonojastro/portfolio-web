@@ -19,7 +19,7 @@ const Qualification = ({ education, work } : Props) => {
   const [isEducation, setIsEducation] = useState<boolean>(false)
 
   return (
-    <div className='py-10 md:py-[100px] w-full'>
+    <div className='py-10 md:py-[100px] w-full' id="qualifications">
       <div className='lg:max-w-6xl mx-auto'>
         <div className='flex flex-col gap-2 items-center pb-10'>
           <h1 className='text-2xl text-[#02c272]'>Qualifications</h1>

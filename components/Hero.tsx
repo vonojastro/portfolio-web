@@ -5,6 +5,7 @@ import ButtonPrimary from './utils/ButtonPrimary'
 import ButtonSecondary from './utils/ButtonSecondary'
 import { HiDownload } from 'react-icons/hi'
 import { BiSend } from 'react-icons/bi'
+import Link from 'next/link'
 
 
 const Hero = () => {
@@ -28,10 +29,12 @@ const Hero = () => {
 
                         <div className='flex gap-3'>
                             <ButtonPrimary>{
-                                <span className='flex gap-2 items-center'>
-                                    Contact Me
-                                    <BiSend className='text-lg' />
-                                </span>
+                                <Link href="#contact">
+                                    <span className='flex gap-2 items-center'>
+                                        Contact Me
+                                        <BiSend className='text-lg' />
+                                    </span>
+                                </Link>
 
                             }</ButtonPrimary>
                             <ButtonSecondary>{
