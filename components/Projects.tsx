@@ -69,7 +69,7 @@ const ProjectSection = () => {
                                         </div>
 
                                     </div>
-                                    <div className='w-12/12 lg:w-6/12 flex flex-col md:flex-row gap-6  items-start justify-center  px-5'>
+                                    <div className='w-12/12 lg:w-6/12 flex flex-col md:flex-row gap-6  items-center md:item-start justify-center py-5  px-5'>
                                         <div className='w-[320px] relative border-4 px-5 bg-white overflow-hidden cursor-pointer rounded-lg border-black drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)] h-[200px]'>
                                             <img src={item.desktopImg} alt='tales_img' className={`absolute top-0 ${item.enableScroll && 'hover:top-[-600%]'} left-0 duration-[4s] ease-in-out`} />
                                         </div>
