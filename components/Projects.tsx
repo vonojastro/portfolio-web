@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Pagination, Navigation } from "swiper";
-import { AiOutlineGithub, AiOutlineGlobal } from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineGlobal, AiOutlineRight } from 'react-icons/ai';
 import ButtonPrimary from './utils/ButtonPrimary';
 import ButtonSecondary from './utils/ButtonSecondary';
 import { projects } from '../constants/details';
@@ -49,13 +49,13 @@ const ProjectSection = () => {
                                     <h1 className='text-2xl text-white font-light py-5 text-center lg:text-start'>{item.title}</h1>
                                     {/* <p className='text-2xl text-[#02c272] font-light pb-5'>Tales Blog Application</p> */}
                                     <div className='hidden relative md:flex border-l-[14px] border-r-[14px] cursor-pointer overflow-hidden border-t-[15px] drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)]  border-black rounded-t-3xl  h-[300px] bg-white'>
-                                        <img src={item.desktopImg} alt='tales_img' className='absolute top-0 hover:top-[-600%] duration-[8s] ease-in-out' />
+                                        <img src={item.desktopImg} alt='tales_img' className={`absolute top-0 ${item.enableScroll && 'hover:top-[-600%]'} duration-[8s] ease-in-out`} />
                                     </div>
                                 </div>
                                 <div className='flex flex-col-reverse lg:flex-row h-full py-5 '>
                                     <div className='px-5 w-12/12 lg:w-6/12 flex flex-col items-center justify-center '>
                                         <div className='text-center max-w-[550px] lg:max-w-full lg:text-start w-full text-white'>
-                                            <p>{item.description}</p>
+                                            <p className='text-sm'>{item.description}</p>
                                         </div>
                                         <div className='flex justify-center lg:justify-start gap-2 pt-5 w-full flex-wrap'>
                                             {item.stack && item.stack.map((st, index) => (
@@ -69,12 +69,12 @@ const ProjectSection = () => {
                                         </div>
 
                                     </div>
-                                    <div className='w-12/12 lg:w-6/12 flex flex-col md:flex-row gap-6  items-center justify-center  px-5'>
+                                    <div className='w-12/12 lg:w-6/12 flex flex-col md:flex-row gap-6  items-start justify-center  px-5'>
                                         <div className='w-[320px] relative border-4 px-5 bg-white overflow-hidden cursor-pointer rounded-lg border-black drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)] h-[200px]'>
-                                            <img src={item.desktopImg} alt='tales_img' className='absolute top-0 hover:top-[-200%] left-0 duration-[4s] ease-in-out' />
+                                            <img src={item.desktopImg} alt='tales_img' className={`absolute top-0 ${item.enableScroll && 'hover:top-[-600%]'} left-0 duration-[4s] ease-in-out`} />
                                         </div>
                                         <div className='w-[100px] relative overflow-hidden cursor-pointer border-4 bg-white  rounded-2xl border-black drop-shadow-[0_35px_35px_rgba(255,255,255,0.15)] h-[200px]'>
-                                            <img src={item.mobileImg} alt='tales_img' className='absolute top-0 hover:top-[-200%] left-0 duration-[4s] ease-in-out' />
+                                            <img src={item.mobileImg} alt='tales_img' className={`absolute top-0 ${item.enableScroll && 'hover:top-[-600%]'} left-0 duration-[4s] ease-in-out`} />
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@ const ProjectSection = () => {
                                             <AiOutlineGlobal className='text-xl' />
                                         </ButtonPrimary>
                                     </Link>
-                                    <Link href={item.githubLink} >
+                                    <Link href={item.githubLink} target="_blank" rel="noopener noreferrer">
                                         <ButtonSecondary >Github
                                             <AiOutlineGithub className='text-2xl' />
                                         </ButtonSecondary>
@@ -93,6 +93,12 @@ const ProjectSection = () => {
                             </div>
                         </SwiperSlide>
                     ))}
+                    {/* <div className="swiper-button-next">
+             
+                    </div>
+                    <div className="swiper-button-prev">
+                    
+                    </div> */}
                 </Swiper>
 
             </div>

@@ -307,9 +307,10 @@ export const testimonilas = [
 
 export const projects = [
   {
-    title: 'Tales Blog Application',
+    title: 'Tales Blog',
     desktopImg: '/images/tales-page.png',
     mobileImg: '/images/tales-page-mobile.png',
+    enableScroll: true,
     description: "Tales Blog is a social media platform designed to provide users with a space to share their stories and engage in discussions through posts and comments. To ensure a seamless and secure user authentication process, I integrated NextAuth into Tales Blog. With NextAuth, users can conveniently log in to Tales Blog using their existing Google, Facebook, or GitHub accounts. ",
     githubLink: 'https://github.com/vonojastro/tales-new',
     liveLink: 'https://tales-three.vercel.app/',
@@ -356,6 +357,7 @@ export const projects = [
     title: 'Tagpros Education LMS',
     desktopImg: '/images/tagpros-page.png',
     mobileImg: '/images/tagpros-page-mobile.png',
+    enableScroll: true,
     description: "Through Tagpros, teachers can create profiles and showcase their expertise, qualifications, and teaching experiences. As an added feature that I implemented, the job application process within Tagpros is streamlined, making it convenient for teachers to submit their applications and credentials directly through the platform.",
     githubLink: '',
     liveLink: 'https://tagpros-staging.vercel.app/jobs',
@@ -385,5 +387,40 @@ export const projects = [
         softwareImg: '/images/skills/css.webp'
       },
     ]
-  }
+  },
+  {
+    title: 'Enzo POS',
+    desktopImg: '/images/pos1-page.png',
+    mobileImg: '/images/pos2-mobile.png',
+    enableScroll: false,
+    description: `Enzo App is a personal project that I initiated for my relatives' construction supplies business. Although it remains unfinished, it encompasses essential features of a Point of Sale (POS) system that enables efficient monitoring of sales and inventories. Admin can log in using the credentials username:  "Von2" and password: "vonCARLO2020". Cashier can log in using the credentials username: "Von" and password: "vonCARLO2020".`,
+    githubLink: 'https://github.com/vonojastro/pos-hardware',
+    liveLink: 'https://enzohardware.vercel.app/',
+    stack: [
+      {
+        software: 'React JS',
+        softwareImg: '/images/skills/react.webp'
+      },
+      {
+        software: 'Node JS',
+        softwareImg: '/images/skills/node.webp'
+      },
+      {
+        software: 'MongoDB',
+        softwareImg: '/images/skills/mongodb.webp'
+      },
+      {
+        software: 'Express JS',
+        softwareImg: '/images/skills/express.webp'
+      },
+      {
+        software: 'Tailwind',
+        softwareImg: '/images/skills/tailwind.webp'
+      },
+      {
+        software: 'CSS',
+        softwareImg: '/images/skills/css.webp'
+      },
+    ]
+  },
 ]
