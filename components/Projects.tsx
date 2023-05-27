@@ -84,9 +84,11 @@ const ProjectSection = () => {
                                             <AiOutlineGlobal className='text-xl' />
                                         </ButtonPrimary>
                                     </Link>
-                                    <ButtonSecondary >Github
-                                        <AiOutlineGithub className='text-2xl' />
-                                    </ButtonSecondary>
+                                    <Link href={item.githubLink} >
+                                        <ButtonSecondary >Github
+                                            <AiOutlineGithub className='text-2xl' />
+                                        </ButtonSecondary>
+                                    </Link>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -311,7 +311,7 @@ export const projects = [
     desktopImg: '/images/tales-page.png',
     mobileImg: '/images/tales-page-mobile.png',
     description: "Tales Blog is a social media platform designed to provide users with a space to share their stories and engage in discussions through posts and comments. To ensure a seamless and secure user authentication process, I integrated NextAuth into Tales Blog. With NextAuth, users can conveniently log in to Tales Blog using their existing Google, Facebook, or GitHub accounts. ",
-    githubLink: 'https://github.com/vonojastro/tales',
+    githubLink: 'https://github.com/vonojastro/tales-new',
     liveLink: 'https://tales-three.vercel.app/',
     stack: [
       {
