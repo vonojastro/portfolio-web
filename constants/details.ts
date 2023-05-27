@@ -410,6 +410,10 @@ export const projects = [
         softwareImg: '/images/skills/mongodb.webp'
       },
       {
+        software: 'Redux',
+        softwareImg: '/images/skills/redux.webp'
+      },
+      {
         software: 'Express JS',
         softwareImg: '/images/skills/express.webp'
       },
