@@ -10,7 +10,7 @@ export const education = [
     first: 'Mapua University',
     second: 'Bachelor of Science in Industrial Design',
     third: '2013-2018',
-    fourth: '',
+    fourth: 'czxc',
     fifth: '/images/mapua.webp'
   },
   {
@@ -31,24 +31,24 @@ export const education = [
 
 export const work = [
   {
-    first: 'Freelance',
+    first: 'Amigo Entertainment Technologies Inc.',
     second: 'Graphic Designer',
     third: '2019-2021',
-    fourth: '',
+    fourth: 'As a Graphic Designer at Amigo Entertainment, I specialized in Facade Lighting Design for architectural structures in Video Animation. I utilized SketchUp and AutoCAD for 3D modeling, creating visually stunning and accurate designs. With Lumion rendering, I enhanced the animations with realistic lighting effects. My expertise in these tools and keen eye for design contributed to captivating and immersive visual experiences.',
     fifth: '/images/upwork.webp'
   },
   {
     first: 'Crescendo Collective',
-    second: 'QA Analyst / Magnolia CMS Developer - Full time',
+    second: 'QA Analyst / Magnolia CMS Developer',
     third: '2021-2022',
-    fourth: '',
+    fourth: 'asd',
     fifth: '/images/crescendo.webp'
   },
   {
     first: 'Tagpros Education',
     second: 'Software Engineer 1 - Part Time',
     third: '2022-Present',
-    fourth: '',
+    fourth: 'asd',
     fifth: '/images/tagpros.webp'
   }
 ]
@@ -64,6 +64,11 @@ export const frontendSkills = [
     software: 'Next JS',
     image: '/images/skills/next.webp',
     description: 'Next.js is a powerful tool that I use for building modern, server-rendered React applications. One of the key benefits of Next.js is its built-in support for server-side rendering (SSR). This means that when a user requests a page, the server generates the HTML content dynamically and sends it to the client. SSR improves the initial load time and enhances search engine optimization (SEO) by providing fully rendered content to search engine crawlers.'
+  },
+  {
+    software: 'Next Auth',
+    image: '/images/skills/nextauth.png',
+    description: 'With NextAuth, I was able to support various authentication providers such as email/password, social media logins (e.g., Google, Facebook, GitHub), and even custom authentication methods. This flexibility allowed me to offer my users multiple options for logging into my application, making the sign-up and login processes more convenient.'
   },
   {
     software: 'Typescript',
@@ -107,7 +112,7 @@ export const frontendSkills = [
   },
   {
     software: 'Jotai',
-    image: '',
+    image: '/images/skills/jotai.webp',
     description: "Jotai, similar to Zustand, is a state management library that leverages React's hooks. It focuses on simplicity and minimizes boilerplate code. Jotai's key feature is the ability to create atomic, granular state atoms, which makes it easy to manage and update specific parts of the state independently."
   },
 
@@ -116,7 +121,7 @@ export const frontendSkills = [
     image: '/images/skills/rbootstrap.webp',
     description: 'I find React Bootstrap to be a fantastic tool for fast and efficient frontend development. It combines the power of React, a popular JavaScript library, with the ready-to-use UI components from Bootstrap. This allows me to quickly create beautiful and responsive user interfaces without spending too much time on styling and layout.'
   },
- 
+
   {
     software: 'Magnolia CMS',
     image: '/images/skills/magnolia.webp',
@@ -297,5 +302,88 @@ export const testimonilas = [
     fullName: '',
     jobTitle: '',
     comments: ''
+  }
+]
+
+export const projects = [
+  {
+    title: 'Tales Blog Application',
+    desktopImg: '/images/tales-page.png',
+    mobileImg: '/images/tales-page-mobile.png',
+    description: "Tales Blog is a social media platform designed to provide users with a space to share their stories and engage in discussions through posts and comments. To ensure a seamless and secure user authentication process, I integrated NextAuth into Tales Blog. With NextAuth, users can conveniently log in to Tales Blog using their existing Google, Facebook, or GitHub accounts. ",
+    githubLink: 'https://github.com/vonojastro/tales',
+    liveLink: 'https://tales-three.vercel.app/',
+    stack: [
+      {
+        software: 'Tailwind',
+        softwareImg: '/images/skills/tailwind.webp'
+      },
+      {
+        software: 'Next JS',
+        softwareImg: '/images/skills/next.webp'
+      },
+      {
+        software: 'Next Auth',
+        softwareImg: '/images/skills/nextauth.png'
+      },
+      {
+        software: 'Typescript',
+        softwareImg: '/images/skills/typescript.webp'
+      },
+      {
+        software: 'MongoDB',
+        softwareImg: '/images/skills/mongodb.webp'
+      },
+      {
+        software: 'PostgreSQL',
+        softwareImg: '/images/skills/postgresql.webp'
+      },
+      {
+        software: 'MySQL',
+        softwareImg: '/images/skills/mysql.webp'
+      },
+      {
+        software: 'Zustand',
+        softwareImg: '/images/skills/zustand.webp'
+      },
+      {
+        software: 'Sequelize',
+        softwareImg: '/images/skills/sequelize.webp'
+      },
+    ]
+  },
+  {
+    title: 'Tagpros Education LMS',
+    desktopImg: '/images/tagpros-page.png',
+    mobileImg: '/images/tagpros-page-mobile.png',
+    description: "Through Tagpros, teachers can create profiles and showcase their expertise, qualifications, and teaching experiences. They can apply for job positions posted by educational institutions. As an added feature that I implemented, the job application process within Tagpros is streamlined, making it convenient for teachers to submit their applications and credentials directly through the platform.",
+    githubLink: '',
+    liveLink: 'https://tagpros-staging.vercel.app/jobs',
+    stack: [
+      {
+        software: 'Next JS',
+        softwareImg: '/images/skills/next.webp'
+      },
+      {
+        software: 'Next Auth',
+        softwareImg: '/images/skills/nextauth.png'
+      },
+      {
+        software: 'MongoDB',
+        softwareImg: '/images/skills/mongodb.webp'
+      },
+      {
+        software: 'Jotai',
+        softwareImg: '/images/skills/jotai.webp'
+      },
+      {
+        software: 'React Bootstrap',
+        softwareImg: '/images/skills/rbootstrap.webp'
+      },
+      {
+        software: 'CSS',
+        softwareImg: '/images/skills/css.webp'
+      },
+    ]
   }
 ]

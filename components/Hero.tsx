@@ -3,6 +3,8 @@ import particlesConfig from '../particlesConfig/particles-config'
 import MyParticles from './utils/ParticlesBackground'
 import ButtonPrimary from './utils/ButtonPrimary'
 import ButtonSecondary from './utils/ButtonSecondary'
+import { HiDownload } from 'react-icons/hi'
+import { BiSend } from 'react-icons/bi'
 
 
 const Hero = () => {
@@ -26,14 +28,19 @@ const Hero = () => {
 
                         <div className='flex gap-3'>
                             <ButtonPrimary>{
-                                <p>
+                                <span className='flex gap-2 items-center'>
                                     Contact Me
-                                </p>
+                                    <BiSend className='text-lg' />
+                                </span>
+
                             }</ButtonPrimary>
                             <ButtonSecondary>{
-                                <p>
-                                    Download CV
-                                </p>
+                                <a href='/images/files/Von_Ojastro_Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                                    <span className='flex gap-2 items-center'>
+                                        Resume
+                                        <HiDownload className='text-lg' />
+                                    </span>
+                                </a>
                             }</ButtonSecondary>
                         </div>
                     </div>

@@ -29,9 +29,11 @@ const Header = () => {
                         <li
                             className='navLink'
                         >Contact</li>
-                        <li
-                            className='navLink'
-                        >Resume</li>
+                        <a href='/images/files/Von_Ojastro_Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                            <li
+                                className='navLink'
+                            >Resume</li>
+                        </a>
                         <div className='px-5 flex items-center gap-4'>
                             <Link href='https://www.linkedin.com/in/von-ojastro-5535831b2/' target="_blank" rel="noopener noreferrer"
 
