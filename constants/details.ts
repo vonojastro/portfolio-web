@@ -46,7 +46,7 @@ export const work = [
   },
   {
     first: 'Tagpros Education',
-    second: 'Software Engineer 1 - Part Time',
+    second: 'Junior Software Engineer - Part Time',
     third: '2022-Present',
     fourth: 'asd',
     fifth: '/images/tagpros.webp'
