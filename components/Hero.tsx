@@ -38,7 +38,7 @@ const Hero = () => {
 
                             }</ButtonPrimary>
                             <ButtonSecondary>{
-                                <a href='/images/files/Von_Ojastro.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                                <a href='/images/files/Von_Ojastro-Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
                                     <span className='flex gap-2  items-center'>
                                         Resume
                                         <HiDownload className=' hidden md:flex text-lg' />

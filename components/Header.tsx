@@ -36,7 +36,7 @@ const Header = () => {
                             >Contact</li>
                         </Link>
 
-                        <a href='/images/files/Von_Ojastro.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                        <a href='/images/files/Von_Ojastro-Resume.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
                             <li
                                 className='navLink'
                             >Resume</li>

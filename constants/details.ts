@@ -33,7 +33,7 @@ export const work = [
   {
     first: 'Amigo Entertainment Technologies Inc.',
     second: 'Graphic Designer',
-    third: '2019-2020',
+    third: '2018-2019',
     fourth: 'As a Graphic Designer at Amigo Entertainment, I specialized in Facade Lighting Design for architectural structures in Video Animation. I utilized SketchUp and AutoCAD for 3D modeling, creating visually stunning and accurate designs. With Lumion rendering, I enhanced the animations with realistic lighting effects. My expertise in these tools and keen eye for design contributed to captivating and immersive visual experiences.',
     fifth: '/images/amigo.jpeg'
   },
