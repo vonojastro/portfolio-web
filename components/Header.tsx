@@ -36,11 +36,11 @@ const Header = () => {
                             >Contact</li>
                         </Link>
 
-                        <Link href='/images/files/Von_Ojastro.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
+                        <a href='/images/files/Von_Ojastro.pdf' id="download" download='Von_Ojastro_Resume' style={{ textDecoration: 'none' }} className=''>
                             <li
                                 className='navLink'
                             >Resume</li>
-                        </Link>
+                        </a>
                         <div className='px-5 flex items-center gap-4'>
                             <Link href='https://www.linkedin.com/in/von-ojastro-5535831b2/' target="_blank" rel="noopener noreferrer"
 
