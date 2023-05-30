@@ -39,7 +39,7 @@ export const work = [
   },
   {
     first: 'Crescendo Collective',
-    second: 'QA Analyst / Magnolia CMS Developer',
+    second: 'QA Tester / Magnolia CMS Developer',
     third: '2021',
     fourth: 'asd',
     fifth: '/images/crescendo.webp'
