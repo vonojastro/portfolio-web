@@ -27,6 +27,13 @@ export const education = [
     fourth: 'https://lyon.com.ph/certificate/VUMBmkTlRty9XzMmAdoxjw',
     fifth: '/images/CIIT.webp'
   },
+  {
+    first: 'Mapua University',
+    second: 'Master of Science in Computer Science',
+    third: '2023',
+    fourth: 'czxc',
+    fifth: '/images/mapua.webp'
+  },
 ]
 
 export const work = [
@@ -46,10 +53,17 @@ export const work = [
   },
   {
     first: 'Tagpros Education',
-    second: 'Junior Software Engineer - Part Time',
+    second: 'Junior Software Engineer (Part Time)',
     third: '2022-Present',
     fourth: 'asd',
     fifth: '/images/tagpros.webp'
+  },
+  {
+    first: 'Converge ICT Solutions',
+    second: 'Software Engineer',
+    third: '2023',
+    fourth: 'asd',
+    fifth: '/images/converge.jpeg'
   }
 ]
 
