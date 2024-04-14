@@ -49,7 +49,7 @@ const Hero = () => {
               <ButtonSecondary>
                 {
                   <a
-                    href="/images/files/Von_Ojastro_Resume.pdf"
+                    href="/images/files/Von_Ojastro_Resume_2024.pdf"
                     id="download"
                     download="Von_Ojastro_Resume"
                     style={{ textDecoration: "none" }}
