@@ -453,7 +453,7 @@ export const projects = [
     desktopImg: "/images/pos1-page.png",
     mobileImg: "/images/pos2-mobile.png",
     enableScroll: false,
-    description: `Enzo App is a personal project that I initiated for my relatives' construction supplies business. Although it remains unfinished, it encompasses essential features of a Point of Sale (POS) system that enables efficient monitoring of sales and inventories. Admin can log in using the credentials username:  "Von2" and password: "vonCARLO2020". Cashier can log in using the credentials username: "Von" and password: "vonCARLO2020".`,
+    description: `Enzo App is a personal project that I initiated for my relatives' construction supplies business. Although it remains unfinished, it encompasses essential features of a Point of Sale (POS) system that enables efficient monitoring of sales and inventories.`,
     githubLink: "https://github.com/vonojastro/pos-hardware",
     liveLink: "https://enzohardware.vercel.app/",
     stack: [
