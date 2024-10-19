@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 interface Info {
@@ -15,7 +16,7 @@ interface Props {
   education: Info[];
 }
 
-const Qualification = ({ education, work } : Props) => {
+const Qualification = ({ education, work }: Props) => {
   const [isEducation, setIsEducation] = useState<boolean>(false)
 
   return (
@@ -27,8 +28,8 @@ const Qualification = ({ education, work } : Props) => {
         </div>
 
         <div className='flex gap-5 justify-center'>
-          <h1 onClick={() => setIsEducation(true)} className={`text-md cursor-pointer duration-300 all ease-in-out ${isEducation ? 'text-[#02c272]' : 'text-white'}`}>Education</h1>
-          <h1 onClick={() => setIsEducation(false)} className={`text-md cursor-pointer duration-300 all ease-in-out ${!isEducation ? 'text-[#02c272]' : 'text-white'}`}>Work</h1>
+          <h1 onClick={() => setIsEducation(true)} className={`text-md cursor-pointer duration-300 all ease-in-out ${isEducation ? 'text-[#02c272] text-lg' : 'text-white'}`}>Education</h1>
+          <h1 onClick={() => setIsEducation(false)} className={`text-md cursor-pointer duration-300 all ease-in-out ${!isEducation ? 'text-[#02c272] text-lg' : 'text-white'}`}>Work</h1>
         </div>
 
         <div className='flex px-10 justify-start md:pl-[180px] lg:pl-0 lg:justify-center gap-5'>
@@ -47,8 +48,10 @@ const Qualification = ({ education, work } : Props) => {
                           <p>{info.second}</p>
                           <p>{info.third}</p>
                         </div>
-                        <Image src={info.fifth} alt='' width={100} height={100} className='border-[1px] border-white hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
-                      </div>
+                        {info.fifth ? <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                          :
+                          <CircularProgress />
+                        }                      </div>
                     </div>
                   </>
                 }
@@ -57,8 +60,10 @@ const Qualification = ({ education, work } : Props) => {
                     {/* dot */}
                     <div className='w-4 h-4 rounded-lg bg-[#02c272] translate-x-[-7px] relative'>
                       <div className='absolute flex gap-5 items-center justify-start right-[-220px] md:right-[-450px] text-white text-start top-[-30px] w-[200px] md:w-[420px]'>
-                        <Image src={info.fifth} alt='' width={100} height={100} className='border-[1px] border-white hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
-                        <div>
+                        {info.fifth ? <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                          :
+                          <CircularProgress />
+                        }                        <div>
                           <h1 className='text-[#02c272]'>{info.first}</h1>
                           <p>{info.second}</p>
                           <p>{info.third}</p>
@@ -82,8 +87,10 @@ const Qualification = ({ education, work } : Props) => {
                           <p>{info.second}</p>
                           <p>{info.third}</p>
                         </div>
-                        <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
-                      </div>
+                        {info.fifth ? <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                          :
+                          <CircularProgress />
+                        }                      </div>
                     </div>
                   </>
                 }
@@ -92,7 +99,11 @@ const Qualification = ({ education, work } : Props) => {
                     {/* dot */}
                     <div className='w-4 h-4 rounded-lg bg-[#02c272] translate-x-[-7px] relative'>
                       <div className='absolute flex gap-5 items-center justify-start right-[-220px] md:right-[-450px] text-white text-start top-[-30px] w-[200px] md:w-[400px]'>
-                        <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                        {info.fifth ? <Image src={info.fifth} alt='' width={100} height={100} className='hidden md:block bg-blue-200 w-[60px] h-[60px] rounded-full object-cover truncate' />
+                          :
+                          <CircularProgress />
+                        }
+
                         <div>
                           <h1 className='text-[#02c272]'>{info.first}</h1>
                           <p>{info.second}</p>

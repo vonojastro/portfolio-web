@@ -25,7 +25,7 @@ const Hero = () => {
             <h1 className="font-bold text-2xl lg:text-4xl text-[#02c272]">
               Von Carlo R. Ojastro
             </h1>
-            <h4 className="text-white text-xl">Full Stack Web Developer</h4>
+            <h4 className="text-white text-xl">Software Engineer</h4>
           </div>
           <div className="flex flex-col gap-3 text-center sm:text-start items-center sm:items-start">
             <p className=" text-white py-3">

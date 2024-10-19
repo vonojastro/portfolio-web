@@ -1,3 +1,5 @@
+
+// Education
 export const education = [
   {
     first: "Sacred Heart College",
@@ -36,6 +38,7 @@ export const education = [
   },
 ];
 
+// Work Experience
 export const work = [
   {
     first: "Amigo Entertainment Technologies Inc.",
@@ -62,9 +65,16 @@ export const work = [
   {
     first: "Converge ICT Solutions",
     second: "Software Engineer",
-    third: "June 2023 - Present",
+    third: "June 2023 - July 2024",
     fourth: "asd",
     fifth: "/images/converge.jpeg",
+  },
+  {
+    first: "Mapua Malayan Colleges",
+    second: "Software Developer",
+    third: "July 2024 - Present",
+    fourth: "asd",
+    fifth: "/images/mmdc.png",
   },
 ];
 
